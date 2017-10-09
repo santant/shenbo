@@ -1,0 +1,74 @@
+/* pages/collectionLis t/collectionList.wxss */
+.section_scroll{
+  height: 82rpx;
+  line-height: 82rpx;
+  color: #999;
+  white-space: nowrap;
+  padding: 0 40rpx;
+}
+.scroll1{
+  background: #eee;
+  /* border: 1px solid #ddd; */
+}
+.scroll2{
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.scrollView{
+  overflow: hidden;
+}
+.scrollView text{
+  padding: 0 40rpx;
+  height: 82rpx;
+  text-align: center;
+  display: inline-block;
+  color: #a7a7a7;
+}
+.scrollView .activeText{
+  color: #333;
+}
+
+/*图片  */
+.collectionList_img{
+  padding: 20rpx;
+  overflow: hidden;
+  
+}
+.collectionList_img .imgList{
+  width: 344rpx;
+  height: 412rpx;
+  overflow: hidden;
+  float: left;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 20rpx;
+}
+.collectionList_img .imgList:nth-child(2n+2){
+  float: right;
+}
+.collectionList_img .imgList .imgBox{
+  width: 344rpx;
+  height:344rpx;
+  position: relative;
+}
+.collectionList_img .imgList .imgBox image{
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+.collectionList_img text{
+  color: #666;
+  font-size: 26rpx;
+  line-height: 66rpx;
+  height: 66rpx;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

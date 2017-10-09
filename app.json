@@ -1,8 +1,11 @@
 {
   "pages": [
+
     "pages/exhibition/exhibition",
-    "pages/activity/activity"
-    
+    "pages/activity/activity",
+    "pages/activityMsg/activityMsg",
+    "pages/collectionList/collectionList",
+    "pages/collection/collection"  
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +26,7 @@
         "text": "展览"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/collection/collection",
         "iconPath": "image/footer_2.png",
         "selectedIconPath": "image/footer_2_active.png",
         "text": "典藏"
