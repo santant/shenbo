@@ -1,12 +1,14 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/exhibition/exhibition",
+    "pages/activity/activity"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#7A7E83",
@@ -15,7 +17,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/exhibition/exhibition",
         "iconPath": "image/footer_1.png",
         "selectedIconPath": "image/footer_1_active.png",
         "text": "展览"
@@ -25,10 +27,9 @@
         "iconPath": "image/footer_2.png",
         "selectedIconPath": "image/footer_2_active.png",
         "text": "典藏"
-      }
-      ,
+      },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/activity/activity",
         "iconPath": "image/footer_3.png",
         "selectedIconPath": "image/footer_3_active.png",
         "text": "活动"
