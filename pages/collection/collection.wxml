@@ -1,0 +1,63 @@
+<!--pages/collection/ollection.wxml-->
+<view class='img_view'>
+  <view bindtap="tapGoList" class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+  <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+</view>

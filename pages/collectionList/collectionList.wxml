@@ -1,0 +1,40 @@
+<!--pages/collectionLis t/collectionList.wxml-->
+<view  class='section_scroll scroll1'>
+        <scroll-view class='scrollView' scroll-x="true" style="height:82rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+        <text class='activeText'>照片</text>
+        <text>文件</text>
+        <text>实物</text>    
+        </scroll-view>
+  </view>
+  <view class='section_scroll scroll2'>
+        <scroll-view class='scrollView' scroll-x="true" style="height:82rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" >
+        <text>全部</text>
+        <text class='activeText'>邓小平南巡讲话系列</text>       
+        </scroll-view>
+  </view>
+ <view class='collectionList_img'>
+    <view class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口诀 刻文九九乘法口诀 </text>
+  </view>
+   <view class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口诀乘法口诀 </text>
+  </view>
+   <view class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口 </text>
+  </view>
+   <view class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口诀口诀 </text>
+  </view>
+ </view>

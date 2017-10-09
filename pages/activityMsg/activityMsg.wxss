@@ -1,0 +1,38 @@
+/* pages/activityMsg/activityMsg.wxss */
+.img_top{
+  margin: 40rpx 28rpx 14rpx;
+}
+.img_top image{
+  margin: 0;
+  width: 100%;
+}
+.view_text{
+  padding: 0 28rpx;
+}
+.view_text text{
+  display: block;
+  line-height: 54rpx;
+  color: #333;
+  font-size: 26rpx;
+  letter-spacing: 2rpx;
+}
+.view_text .activeColor{
+  color: #666
+}
+/*活动详情  */
+.title_activity{
+  position: relative;
+  height: 64px;
+  line-height: 64px;
+  padding-left: 28rpx;
+}
+.title_activity image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+  position: relative;
+  top: 3rpx;
+}
+.title_activity  text{
+  font-size: 32rpx;
+}
