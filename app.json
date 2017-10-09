@@ -7,5 +7,32 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#6e829e",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/footer_1.png",
+        "selectedIconPath": "image/footer_1_active.png",
+        "text": "展览"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/footer_2.png",
+        "selectedIconPath": "image/footer_2_active.png",
+        "text": "典藏"
+      }
+      ,
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/footer_3.png",
+        "selectedIconPath": "image/footer_3_active.png",
+        "text": "活动"
+      }
+    ]
   }
 }
