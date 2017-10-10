@@ -1,0 +1,21 @@
+<!--pages/exhibitionMsg/exhibitionMsg.wxml-->
+<view class='pageBox'>
+  <view class='imgBox'>
+      <image mode='widthFix' src="http://image2.artup.com/static/xiaochengxu/test.jpg"></image>
+  </view>
+  <view class='textBox'>
+      <text class='tittle'>平城·晋阳——山西出土北朝文物精品展</text>
+      <text class='msg'><text class='bt'>展览时间：</text>2017.07.21 - 2017.12.21</text>
+      <text class='msg'><text class='bt'>展览地点：</text>深圳博物馆历史馆（新馆）</text>
+      <text class='msg'><text class='bt'>展览介绍：</text>2017年6月10日，“平城晋阳——山西出土北朝文物精品展”在深圳博物馆历史民俗馆开幕。此次展览由深圳博物馆联合山西博物院、山西省考古研究所、大同市博物馆共同举办，共展出北朝鎏金银器、陶</text>
+  </view>
+   <swiper indicator-dots="false"
+  autoplay="false" interval="5000" duration="1000">
+    <swiper-item>
+      <image src="http://image2.artup.com/static/xiaochengxu/test.jpg" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://image2.artup.com/static/xiaochengxu/test.jpg" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+</swiper>
+</view>

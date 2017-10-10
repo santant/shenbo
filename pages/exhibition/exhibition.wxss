@@ -1,1 +1,73 @@
 /* pages/exhibition.wxss */
+.box{
+  background: #f3f3f3;
+  overflow: hidden; 
+}
+.header{
+  width: 100%;
+  height: 80rpx;
+  background-color: #eeeeee;
+}
+.header .tab{
+  float: left;
+  height:100%;
+  width: 50%;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.content{
+  border-bottom: 1rpx solid #ebebeb;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+}
+
+.leftBox{
+  width: 460rpx;
+  height: 280rpx;
+  float: left;
+}
+.rightBox{
+  width: 280rpx;
+  height: 280rpx;
+  float: left;
+  position: relative;
+}
+.leftBox text{
+  line-height: 50rpx;
+  width: 100%;
+  display: block;
+  padding-left: 24rpx;
+  
+}
+.leftBox text.qt{
+ color: #666;
+ font-size: 26rpx;
+}
+.tittle{
+  font-size: 32rpx;
+  margin-top: 50rpx;
+  color: #333;
+}
+.imgBox{
+  width: 240rpx;
+  height: 180rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto auto;
+  border: 1px solid #ebebeb;
+  border-radius: 4rpx;
+}
+.imgBox image{
+  width:180rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto auto;
+}

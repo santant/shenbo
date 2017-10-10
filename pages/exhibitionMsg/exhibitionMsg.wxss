@@ -1,0 +1,40 @@
+/* pages/exhibitionMsg/exhibitionMsg.wxss */
+.pageBox{
+  width: 100%;
+}
+.imgBox{
+  width: 750rpx;
+}
+.imgBox image{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.textBox{
+  
+}
+.textBox text{
+  font-size: 30rpx;
+  width: 95%;
+ 
+  
+}
+.msg{
+   display: block;
+   line-height: 54rpx;
+   font-size: 26rpx;
+   margin-left: 30rpx;
+   margin-right: 30rpx;
+   color: #666;
+}
+.bt{
+  font-size: 26rpx;
+  color: #999;
+  padding-left: 0;
+}
+.tittle{
+  line-height: 100rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  
+}

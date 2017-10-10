@@ -16,7 +16,7 @@
 .contents .imgViewList{
   width: 690rpx;
   height: 460rpx;
-  background-color: red;
+  background-color: #f3f3f3;
   margin:0 auto;
   margin-top: 30px;
   position: relative;
@@ -36,12 +36,13 @@
   color: #666;
 }
 .contents .imgViewList image{
-  width: 100%;
-  position: absolute;
+  width: 690rpx;
+  height: 460rpx; 
+  /* position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto auto;
+  margin: auto auto; */
   
 }

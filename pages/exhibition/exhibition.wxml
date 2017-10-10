@@ -1,2 +1,31 @@
-<!--pages/exhibition.wxml-->
-<text>pages/exhibition.wxml</text>
+<view class='box'>
+    <view class='header'>
+        <view class='tab'>常设展览</view>
+        <view class='tab'>专题展览</view>
+    </view>
+    <view class='content' bindtap="toast">
+         <view class='leftBox'>
+            <text class='tittle'>琉光璃彩－欧洲玻璃艺术珍品展</text>
+            <text class='qt'>深圳博物馆新馆</text>
+            <text class='qt'>2017.6.20-2017.8.30</text>
+         </view>
+         <view class='rightBox'>
+          <view class='imgBox'>
+              <image mode='widthFix' src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+          </view>
+         </view>
+    </view>
+    <view class='content' bindtap="toast">
+         <view class='leftBox'>
+            <text class='tittle'>琉光璃彩－欧洲玻璃艺术珍品展</text>
+            <text class='qt'>深圳博物馆新馆</text>
+            <text class='qt'>2017.6.20-2017.8.30</text>
+         </view>
+         <view class='rightBox'>
+            <view class='imgBox'>
+              <image mode='widthFix' src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+             </view>
+         </view>
+    </view>
+</view>
+    

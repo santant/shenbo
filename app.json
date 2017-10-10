@@ -1,11 +1,11 @@
 {
   "pages": [
-
     "pages/exhibition/exhibition",
     "pages/activity/activity",
     "pages/activityMsg/activityMsg",
     "pages/collectionList/collectionList",
-    "pages/collection/collection"  
+    "pages/collection/collection",
+    "pages/exhibitionMsg/exhibitionMsg"
   ],
   "window": {
     "backgroundTextStyle": "light",
