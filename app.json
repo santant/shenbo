@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/collectionList/collectionList",  
     "pages/activityMsg/activityMsg",
-    "pages/collectionList/collectionList",
-    "pages/collection/collection"  
+    "pages/collection/collection",
+    "pages/collectionMsg/collectionMsg"
   ],
   "window": {
     "backgroundTextStyle": "light",

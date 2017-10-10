@@ -5,7 +5,6 @@ Page({
     wx.navigateTo({
       url: '../collectionList/collectionList'
     })
-    console.log(event)
   },
   /**
    * 页面的初始数据

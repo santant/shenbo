@@ -1,6 +1,11 @@
 // pages/collectionLis t/collectionList.js
 Page({
-
+  //事件处理函数
+  tapGoList: function (event) {
+    wx.navigateTo({
+      url: '../collectionMsg/collectionMsg'
+    })
+  },
   /**
    * 页面的初始数据
    */
