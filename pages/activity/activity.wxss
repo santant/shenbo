@@ -1,0 +1,47 @@
+.contents{
+  background: #f3f3f3;
+  overflow: hidden;
+}
+.list{
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  margin-top: 10rpx;
+  border-top: 1rpx solid #ebebeb;
+  border-bottom: 1rpx solid #ebebeb;
+}
+.list:first-child{
+  margin-top: 0;
+}
+.contents .imgViewList{
+  width: 690rpx;
+  height: 460rpx;
+  background-color: red;
+  margin:0 auto;
+  margin-top: 30px;
+  position: relative;
+}
+.textList{
+  width: 690rpx;
+  margin: 0 auto;
+}
+.textList text{
+  width: 100%;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  display: block;
+
+}
+.special{
+  color: #666;
+}
+.contents .imgViewList image{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto;
+  
+}

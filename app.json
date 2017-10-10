@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/collectionList/collectionList",  
+    "pages/exhibition/exhibition",
+    "pages/activity/activity",
+    "pages/collectionList/collectionList",
     "pages/activityMsg/activityMsg",
     "pages/collection/collection",
     "pages/collectionMsg/collectionMsg"
@@ -19,7 +20,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/exhibition/exhibition",
         "iconPath": "image/footer_1.png",
         "selectedIconPath": "image/footer_1_active.png",
         "text": "展览"
@@ -31,7 +32,7 @@
         "text": "典藏"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/activity/activity",
         "iconPath": "image/footer_3.png",
         "selectedIconPath": "image/footer_3_active.png",
         "text": "活动"
