@@ -3,6 +3,11 @@
 const app = getApp()
 
 Page({
+  tapGoList: function (event) {
+    wx.navigateTo({
+      url: '../activityMsg/activityMsg'
+    })
+  },
   data: {
     motto: 'Hello World',
   }

@@ -1,5 +1,5 @@
 <view class='contents'>
-  <view class='list'> 
+  <view bindtap='tapGoList' class='list'> 
     <view class='imgViewList'>
       <image  mode='aspectFit' src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
     </view>
