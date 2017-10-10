@@ -2,10 +2,13 @@
   "pages": [
     "pages/exhibition/exhibition",
     "pages/activity/activity",
-    "pages/activityMsg/activityMsg",
     "pages/collectionList/collectionList",
     "pages/collection/collection",
-    "pages/exhibitionMsg/exhibitionMsg"
+    "pages/exhibitionMsg/exhibitionMsg",
+    "pages/activityMsg/activityMsg",
+    "pages/collection/collection",
+    "pages/collectionMsg/collectionMsg"
+3
   ],
   "window": {
     "backgroundTextStyle": "light",

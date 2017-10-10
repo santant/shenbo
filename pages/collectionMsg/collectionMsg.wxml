@@ -1,0 +1,44 @@
+<!--pages/collectionMsg/collectionMsg.wxml-->
+<view class='img_title'>
+<image mode="widthFix" src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image></view>
+
+<view class='video_mp3'>
+  <view id='0' bindtap='isMp3' wx:if="{{condition}}" class='mp3'>
+     <image src='http://image2.artup.com/static/xiaochengxu/icon_mp3_open.png'></image>
+     <text>音频</text>
+  </view>
+  <view id='1' bindtap='isMp3' wx:if="{{!condition}}" class='mp3'>
+     <image src='http://image2.artup.com/static/xiaochengxu/icon_mp3_close.png'></image>
+     <text>音频</text>
+  </view>
+  <view  bindtap='startVideo' class='video'>
+    <image src='http://image2.artup.com/static/xiaochengxu/icon_video.png'></image>
+    <text>视频</text>
+  </view>
+</view>
+<!--物品描述  -->
+<view  class='thing_msg'>
+  <text class='title'>褐彩牡丹纹梅瓶</text>
+  <text class='year'>
+    元（公元1279-1386年） 
+  </text> 
+  <text class='size'>
+  高36.6厘米、口径6.5厘米、底径14.3厘米 
+  </text>
+  <text class='address'>
+  深圳南头后海出土    
+  </text>
+  <text class='msg'>
+  胎呈米黄色。素胎上绘褐彩。侈口，短颈丰肩，斜腹束收成台形足。肩附双系，近底有四小孔。颈和足施酱色釉。彩绘纹饰分层，从上而下依次为莲瓣纹、卷草纹、龟锦纹为地的折枝牡丹菱形开光、莲纹、卷草纹及朵花纹菱形开光。此梅瓶造型秀美，纹饰描绘生动细腻，富有层次，为元代广东地方瓷窑有特色的佳作。深圳南头后海出土    
+  </text>
+</view>
+
+<audio style='position: absolute;top:-1000px;' poster="{{mp3.poster}}" name="{{mp3.name}}" author="{{mp3.author}}" src="{{mp3.src}}" id="myAudio" controls loop></audio>
+
+<block wx:if="{{video_iss}}">
+    <view  bindtap='closeVideo' class='video_box'>
+    <view style='text-align:center;'>
+         <video objectFit="fill" id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" bindfullscreenchange="bindfullscreenchanges" autoplay enable-danmu  controls></video>
+    </view> 
+    </view>
+</block>

@@ -13,7 +13,7 @@
         </scroll-view>
   </view>
  <view class='collectionList_img'>
-    <view class='imgList'>
+    <view  bindtap="tapGoList" class='imgList'>
        <view class='imgBox'>
       <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
     </view>

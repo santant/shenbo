@@ -1,0 +1,89 @@
+/* pages/collectionMsg/collectionMsg.wxss */
+.img_title {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.img_title image{
+  display: block;
+  width: 100%;
+}
+/*视频音频  */
+.video_mp3{
+  width: 194rpx;
+  height: 78rpx;
+  margin: 20rpx auto;
+  overflow: hidden;
+  /* display: flex; */position: relative;
+}
+.video_mp3 .video{
+  width: 50%;float: left;
+  height: 100%;position: relative;
+}
+.video_mp3 .video::after{
+  content: '';
+  width: 2rpx;
+  height: 80%;
+  background: #eee;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.video_mp3 .mp3{
+  width: 50%;float: left;height: 100%;position: relative;
+}
+.video_mp3 image{
+  width: 51rpx;
+  height: 46rpx;
+}
+.video_mp3 .video  image{
+ margin-left: 48rpx;
+}
+.video_mp3 .video  text{
+ text-align: right;
+}
+.video_mp3 text{
+  font-size: 22rpx;
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  line-height: 14rpx;
+}
+
+/*描述  */
+.thing_msg{
+  padding: 18rpx 50rpx 20rpx 26rpx;
+}
+.thing_msg text{
+  display: block;
+  font-size: 26rpx;
+  color: #666;
+}
+.thing_msg .title{
+  color: #333;
+  font-size: 32rpx;
+}
+
+/*视频  */
+.video_box{
+  position:fixed; 
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+body .video_show{
+  display: block;
+}
+ .video_box video{
+  position: absolute;
+  margin: auto auto;
+   max-height: 100%; 
+  width: 100%; 
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+} 
