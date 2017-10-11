@@ -1,0 +1,28 @@
+<!--pages/collectionLis t/collectionList.wxml-->
+
+ <view class='collectionList_img'>
+    <view  bindtap="tapGoList" class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口诀 刻文九九乘法口诀 </text>
+  </view>
+   <view class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口诀乘法口诀 </text>
+  </view>
+   <view class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口 </text>
+  </view>
+   <view class='imgList'>
+       <view class='imgBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+    </view>
+    <text>九九乘法口诀口诀 </text>
+  </view>
+ </view>

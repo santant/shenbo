@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    dataList:[]
   },
   toast:function(){
     wx.navigateTo({
@@ -16,7 +16,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var _this = this
+    wx.request({
+      url: 'https://shenbo.artup.com//webService/getEntitysByLM?pageNo=1&pageSize=10&lang=0&LM=L0202&clientType=3', //仅为示例，并非真实的接口地址
+      data: {
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        _this.setData({
+          dataList: res.data.entitys
+        })
+        console.log(res.data.entitys)
+      }
+    })
   },
   
   /**
@@ -45,6 +59,7 @@ Page({
    */
   onUnload: function () {
   
+   
   },
 
   /**
