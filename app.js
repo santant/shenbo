@@ -1,5 +1,6 @@
 //app.js
 App({
+  
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,7 +34,9 @@ App({
       }
     })
   },
+  //定义需要的全局变量
   globalData: {
-    userInfo: null
+    userInfo: null,
+    Host:'https://shenbo.artup.com/'
   }
 })

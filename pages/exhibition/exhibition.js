@@ -19,8 +19,9 @@ Page({
   onLoad: function (options) {
     var _this = this
     wx.request({
-      url: 'https://shenbo.artup.com//webService/getEntitysByLM?pageNo=1&pageSize=10&lang=0&LM=L0202&clientType=3', //仅为示例，并非真实的接口地址
+      url: 'https://shenbo.artup.com/webPublication/getLmDataJson?pageNo=1&pageSize=6&lmType=L0601&paltform=1', //仅为示例，并非真实的接口地址
       data: {
+
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -29,7 +30,7 @@ Page({
         _this.setData({
           dataList: res.data.entitys
         })
-        console.log(res.data.entitys)
+
       }
     })
   },

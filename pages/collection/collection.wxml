@@ -1,24 +1,14 @@
 <!--pages/collection/ollection.wxml-->
 <view class='img_view'>
-  <view bindtap="tapGoList" class='img_list'>
+<block  wx:for="{{collection.childs}}">
+  <view id='{{item.entity.code}}' bindtap="tapGoList" class='img_list'>
     <view class='img_box'>
-      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+      <image src='{{HOST}}{{item.entity.thumbPic}}'></image>   
     </view>    
-     <text>古代艺术</text> 
+     <text>{{item.entity.className}}古代艺术</text> 
   </view>
-  <view class='img_list'>
-    <view class='img_box'>
-      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
-    </view>    
-     <text>古代艺术</text> 
-  </view>
-   <view class='img_list'>
-    <view class='img_box'>
-      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
-    </view>    
-     <text>古代艺术</text> 
-  </view>
-   <view class='img_list'>
+  </block>
+  <!-- <view class='img_list'>
     <view class='img_box'>
       <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
     </view>    
@@ -60,4 +50,16 @@
     </view>    
      <text>古代艺术</text> 
   </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view>
+   <view class='img_list'>
+    <view class='img_box'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>   
+    </view>    
+     <text>古代艺术</text> 
+  </view> -->
 </view>

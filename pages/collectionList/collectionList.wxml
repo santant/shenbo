@@ -19,7 +19,7 @@
     </view>
     <text>九九乘法口诀 刻文九九乘法口诀 </text>
   </view>
-   <view class='imgList'>
+   <!-- <view class='imgList'>
        <view class='imgBox'>
       <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
     </view>
@@ -36,5 +36,5 @@
       <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
     </view>
     <text>九九乘法口诀口诀 </text>
-  </view>
+  </view> -->
  </view>
