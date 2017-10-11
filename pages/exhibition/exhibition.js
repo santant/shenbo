@@ -16,7 +16,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    //http://shenbo.artup.com/webPublication/getLmDataJson?pageNo=1&pageSize=6&lmType=L0601&paltform=1
+    wx.request({
+      url: 'https://shenbo.artup.com/webPublication/getLmDataJson?pageNo=1&pageSize=6&lmType=L0601&paltform=1', //仅为示例，并非真实的接口地址
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res)
+      }
+    })
   },
   
   /**
