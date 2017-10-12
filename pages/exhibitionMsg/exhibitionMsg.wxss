@@ -1,6 +1,7 @@
 /* pages/exhibitionMsg/exhibitionMsg.wxss */
 .pageBox{
   width: 100%;
+  background-color: #f3f3f3;
 }
 .imgBox{
   width: 750rpx;
@@ -11,13 +12,12 @@
   margin: 0;
 }
 .textBox{
-  
+  background-color: #fff;
 }
 .textBox text{
   font-size: 30rpx;
   width: 95%;
  
-  
 }
 .msg{
    display: block;
@@ -37,4 +37,110 @@
   margin-left: 30rpx;
   margin-right: 30rpx;
   
+}
+.moreBtn{
+  width: 100%;
+  height: 86rpx;
+  position: relative;
+  box-shadow: 2rpx #f1f1f1;
+  background-color: #fff;
+}
+.moreBtn image{
+  width: 40rpx;
+  height: 22rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto auto;
+}
+/*活动详情  */
+.title_activity{
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 28rpx;
+  background-color: #fff;
+}
+.title_activity .hdxqtb{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+  position: relative;
+  top: 3rpx;
+}
+.title_activity  text{
+  font-size: 32rpx;
+}
+.moresBtn{
+  float: right;
+  margin-right: 30rpx;
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  display: inline-block;
+   margin-top: 24rpx;
+   background-color: #fff;
+ 
+}
+.imgListBox{
+  background-color: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #ebebeb;
+
+}
+.imgListBox .smallBox{
+  width: 200rpx;
+  margin-left: 35rpx;
+  float: left;
+  
+}
+.smallBox image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.smallBox text{
+  font-size: 24rpx;
+  color: #666;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 36rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding-top: 10rpx;
+
+}
+.tpzlBox{
+  width: 100%;
+  height: 630rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+  border-top: 1px solid #ebebeb;
+}
+.swipers{
+  width: 690rpx;
+  height:510rpx;
+  margin: 0 auto;
+}
+.luboImgs{
+  width: 100%;
+}
+.videos{
+  width: 690rpx;
+  height: 390rpx;
+  margin: 0 auto;
+}
+.videos video{
+  width: 690rpx;
+  height: 390rpx;
+}
+.spzlBox{
+  width: 100%;
+  height: 500rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+  border-top: 1px solid #ebebeb;
 }

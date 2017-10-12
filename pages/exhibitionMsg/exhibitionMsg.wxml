@@ -1,21 +1,58 @@
 <!--pages/exhibitionMsg/exhibitionMsg.wxml-->
 <view class='pageBox'>
   <view class='imgBox'>
-      <image mode='widthFix' src="http://image2.artup.com/static/xiaochengxu/test.jpg"></image>
+    <image mode='widthFix' src="http://image2.artup.com/static/xiaochengxu/test.jpg"></image>
   </view>
   <view class='textBox'>
-      <text class='tittle'>平城·晋阳——山西出土北朝文物精品展</text>
-      <text class='msg'><text class='bt'>展览时间：</text>2017.07.21 - 2017.12.21</text>
-      <text class='msg'><text class='bt'>展览地点：</text>深圳博物馆历史馆（新馆）</text>
-      <text class='msg'><text class='bt'>展览介绍：</text>2017年6月10日，“平城晋阳——山西出土北朝文物精品展”在深圳博物馆历史民俗馆开幕。此次展览由深圳博物馆联合山西博物院、山西省考古研究所、大同市博物馆共同举办，共展出北朝鎏金银器、陶</text>
+    <text class='tittle'>平城·晋阳——山西出土北朝文物精品展</text>
+    <text class='msg'><text class='bt'>展览时间：</text>2017.07.21 - 2017.12.21</text>
+    <text class='msg'><text class='bt'>展览地点：</text>深圳博物馆历史馆（新馆）</text>
+    <text class='msg'><text class='bt'>展览介绍：</text>2017年6月10日，“平城晋阳——山西出土北朝文物精品展”在深圳博物馆历史民俗馆开幕。此次展览由深圳博物馆联合山西博物院、山西省考古研究所、大同市博物馆共同举办，共展出北朝鎏金银器、陶</text>
   </view>
-   <swiper indicator-dots="false"
-  autoplay="false" interval="5000" duration="1000">
-    <swiper-item>
-      <image src="http://image2.artup.com/static/xiaochengxu/test.jpg" class="slide-image" width="355" height="150"/>
-    </swiper-item>
-    <swiper-item>
-      <image src="http://image2.artup.com/static/xiaochengxu/test.jpg" class="slide-image" width="355" height="150"/>
-    </swiper-item>
-</swiper>
+  <view class='moreBtn'>
+    <image src='../../image/gd_03.png'></image>
+  </view>
+  <view class='title_activity'>
+    <image class='hdxqtb' src='http://image2.artup.com/static/xiaochengxu/icon_huodong.png'></image>
+    <text>相关展览</text>
+    <image class='moresBtn' bindtap="tapGoList" src='../../image/more_03.png'></image>
+  </view>
+  <view class='imgListBox'>
+    <view class='smallBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+      <text>褐彩牡丹纹梅瓶</text>
+    </view>
+    <view class='smallBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+      <text>褐彩牡丹纹梅瓶褐彩牡丹纹梅瓶</text>
+    </view>
+    <view class='smallBox'>
+      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+      <text>褐彩牡丹纹梅瓶</text>
+    </view>
+  </view>
+  <view class='tpzlBox'>
+    <view class='title_activity'>
+      <image class='hdxqtb' src='http://image2.artup.com/static/xiaochengxu/icon_huodong.png'></image>
+      <text>展览图片</text>
+    </view>
+    <swiper class='swipers' indicator-dots="true" autoplay="false" interval="5000" duration="1000">
+      <swiper-item>
+        <image class='luboImgs' mode='widthFix' src="http://image2.artup.com/static/xiaochengxu/test.jpg" />
+      </swiper-item>
+      <swiper-item>
+        <image class='luboImgs' mode='widthFix' src="http://image2.artup.com/static/xiaochengxu/test.jpg" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='tpzlBox spzlBox'>
+    <view class='title_activity'>
+      <image class='hdxqtb' src='http://image2.artup.com/static/xiaochengxu/icon_huodong.png'></image>
+      <text> 展览视频</text>
+    </view>
+    <view class='videos'>
+      <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+        bindfullscreenchange="bindfullscreenchanges" autoplay='false' enable-danmu controls></video>
+    </view>
+  </view>
 </view>

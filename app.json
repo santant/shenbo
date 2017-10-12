@@ -6,7 +6,8 @@
     "pages/collection/collection",
     "pages/exhibitionMsg/exhibitionMsg",
     "pages/activityMsg/activityMsg",
-    "pages/collectionMsg/collectionMsg"
+    "pages/collectionMsg/collectionMsg",
+    "pages/exhibitionCollectionList/exhibitionCollectionList"
   ],
   "window": {
     "backgroundTextStyle": "light",

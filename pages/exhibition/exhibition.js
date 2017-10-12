@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    HOST: getApp().globalData.Host,
+    dataList:[]
   },
   toast:function(){
     wx.navigateTo({
@@ -16,18 +17,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //http://shenbo.artup.com/webPublication/getLmDataJson?pageNo=1&pageSize=6&lmType=L0601&paltform=1
+    var _this = this
     wx.request({
       url: 'https://shenbo.artup.com/webPublication/getLmDataJson?pageNo=1&pageSize=6&lmType=L0601&paltform=1', //仅为示例，并非真实的接口地址
       data: {
-        x: '',
-        y: ''
+
       },
       header: {
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
-        console.log(res)
+        _this.setData({
+          dataList: res.data.entitys
+        })
+
       }
     })
   },
@@ -58,6 +61,7 @@ Page({
    */
   onUnload: function () {
   
+   
   },
 
   /**

@@ -1,4 +1,4 @@
-// pages/exhibitionMsg/exhibitionMsg.js
+// pages/exhibitionCollectionList/exhibitionCollectionList.js
 Page({
 
   /**
@@ -14,11 +14,7 @@ Page({
   onLoad: function (options) {
   
   },
-  tapGoList: function (event) {
-    wx.navigateTo({
-      url: '../exhibitionCollectionList/exhibitionCollectionList'
-    })
-    },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
