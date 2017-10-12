@@ -1,11 +1,11 @@
 // pages/collectionMsg/collectionMsg.js
 Page({
   //事件处理函数
-  tapGoList: function (event) {
-    wx.navigateTo({
-      url: '../collectionList/collectionList'
-    })
-  },
+  // tapGoList: function (event) {
+  //   wx.navigateTo({
+  //     url: '../collectionList/collectionList'
+  //   })
+  // }, 
   //点击视频按钮打开播放视频
   startVideo:function(){
     this.setData({
@@ -55,6 +55,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    HOST: getApp().globalData.Host,
+    collectionMsg: [], //藏品最终详情
     condition:true,
     video_iss:false,
     mp3:{
@@ -95,6 +97,22 @@ Page({
     this.audioCtx = wx.createAudioContext('myAudio')
 
     this.videoContext = wx.createVideoContext('myVideo')
+
+    //获得每个的详细信息
+    var vm = this;
+    wx.request({
+      url: this.data.HOST + 'webAppCollection/collectionDetail?id=' + vm.options.id+'&resType=CmsCollection&lang=0&clientType=3&platform=3',
+      success: function (res) {
+        vm.setData({
+          collectionMsg: res.data.entity        
+        })
+        
+        //动态设置title
+        wx.setNavigationBarTitle({
+          title: res.data.entity.showName
+        })
+      }
+    })
   },
 
   /**
