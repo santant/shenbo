@@ -6,13 +6,13 @@
   <block  wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="itmes">
    <view class='content' bindtap="toast">
          <view class='leftBox'>
-            <text class='tittle'>琉光璃彩－欧洲玻璃艺术珍品展</text>
-            <text class='qt'>{{itmes.showName}}</text>
+            <text class='tittle'>{{itmes.showName}}</text>
+            <text class='qt'>{{itmes.entity.exhibitLocate}}</text>
             <text class='qt'>{{itmes.showDate}}</text>
          </view>
          <view class='rightBox'>
           <view class='imgBox'>
-              <image mode='widthFix' src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+              <image mode='widthFix' src='{{HOST}}{{itmes.showPic}}'></image>
           </view>
          </view>
     </view>
