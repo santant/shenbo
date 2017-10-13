@@ -3,8 +3,8 @@ Page({
   //事件处理函数
   tapGoList: function (event) {
     wx.navigateTo({
-      url: '../collectionList/collectionList?code='+event.currentTarget.id
-    })
+      url: '../collectionList/collectionList?code=' + event.currentTarget.id + '&index=' + event.currentTarget.dataset.index + '&className=' + event.currentTarget.dataset.classname
+    }) 
   },
   /**
    * 页面的初始数据
@@ -13,34 +13,29 @@ Page({
     HOST: getApp().globalData.Host,
     collection:[] //藏品list
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var vm = this;
+    //头部接口
+    wx.request({
+      url: this.data.HOST + 'CmsActiveService/getFenleiBycode?code=C0101&clientType=3&platform=3',
+      success: function (res) {
+        console.log(res.data.entitys[0])
+        // this.data.collection = res.data.entitys[0]
+        vm.setData({
+          collection: res.data.entitys[0]
+        })
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    var vm = this;
-    wx.request({
-      url: this.data.HOST +'CmsActiveService/getFenleiBycode?code=C0101&clientType=3&platform=3', 
-        data: {
-          x: '',
-          y: ''
-        },
-        success: function (res) {
-          // this.data.collection = res.data.entitys[0]
-          vm.setData({
-            collection: res.data.entitys[0]
-          })
-        }
-      })
   },
-
   /**
    * 生命周期函数--监听页面显示
    */
@@ -52,7 +47,6 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
   },
 
   /**

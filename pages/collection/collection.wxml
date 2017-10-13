@@ -1,11 +1,11 @@
 <!--pages/collection/ollection.wxml-->
 <view class='img_view'>
 <block  wx:for="{{collection.childs}}">
-  <view id='{{item.entity.code}}' bindtap="tapGoList" class='img_list'>
+  <view id='{{item.entity.code}}' data-classname='{{item.entity.className}}' data-index='{{index}}' bindtap="tapGoList" class='img_list'>
     <view class='img_box'>
       <image src='{{HOST}}{{item.entity.thumbPic}}'></image>   
     </view>    
-     <text>{{item.entity.className}}古代艺术</text> 
+     <text>{{item.entity.className}}</text> 
   </view>
   </block>
   <!-- <view class='img_list'>

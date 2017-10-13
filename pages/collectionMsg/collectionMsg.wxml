@@ -1,6 +1,6 @@
 <!--pages/collectionMsg/collectionMsg.wxml-->
 <view class='img_title'>
-<image mode="widthFix" src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image></view>
+<image mode="widthFix" src='{{HOST}}{{collectionMsg.thumbPic}}'></image></view>
 
 <view class='video_mp3'>
   <view id='0' bindtap='isMp3' wx:if="{{condition}}" class='mp3'>
@@ -18,18 +18,18 @@
 </view>
 <!--物品描述  -->
 <view  class='thing_msg'>
-  <text class='title'>褐彩牡丹纹梅瓶</text>
+  <text class='title'>{{collectionMsg.showName}}</text>
   <text class='year'>
-    元（公元1279-1386年） 
+    {{collectionMsg.specificYear}} {{collectionMsg.decade}}） 
   </text> 
   <text class='size'>
-  高36.6厘米、口径6.5厘米、底径14.3厘米 
+  {{collectionMsg.size}}
   </text>
   <text class='address'>
-  深圳南头后海出土    
+  来源：{{collectionMsg.collectMode}}   
   </text>
   <text class='msg'>
-  胎呈米黄色。素胎上绘褐彩。侈口，短颈丰肩，斜腹束收成台形足。肩附双系，近底有四小孔。颈和足施酱色釉。彩绘纹饰分层，从上而下依次为莲瓣纹、卷草纹、龟锦纹为地的折枝牡丹菱形开光、莲纹、卷草纹及朵花纹菱形开光。此梅瓶造型秀美，纹饰描绘生动细腻，富有层次，为元代广东地方瓷窑有特色的佳作。深圳南头后海出土    
+  {{collectionMsg.detail}}   
   </text>
 </view>
 
