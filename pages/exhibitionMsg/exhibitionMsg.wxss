@@ -55,6 +55,9 @@
   right: 0;
   margin: auto auto;
 }
+.imgeClick{
+  transform:rotate(180deg);
+}
 /*活动详情  */
 .title_activity{
   position: relative;

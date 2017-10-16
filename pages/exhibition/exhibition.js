@@ -6,37 +6,66 @@ Page({
    */
   data: {
     HOST: getApp().globalData.Host,
-    dataList:[]
+    dataList:[],
+    types:'',
+    selectOne:true,
+    selectTwo:false
   },
-  toast:function(){
+  toast:function(event){
+    var resId = event.currentTarget.dataset.resId
     wx.navigateTo({
-      url: '../exhibitionMsg/exhibitionMsg'
+      url: '../exhibitionMsg/exhibitionMsg?resId=' + resId
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: '数据加载中...',
+      mask: true
+    })
+    var _this = this
+    _this.checkTypes('L0202')
+  },
+  checkUpdata(event){
+    var that = this
+    that.data.types = event.currentTarget.dataset.types
+    if (that.data.types == 'L0202'){
+      that.setData({
+        selectOne: true,
+        selectTwo:false
+      })
+    } else if (that.data.types == 'L0203'){
+      that.setData({
+        selectOne: false,
+        selectTwo: true
+      })
+    }
+    wx.showLoading({
+      title: '数据加载中...',
+      mask: true
+    })
+    that.checkTypes(that.data.types)
+  },
+  checkTypes(types){
     var _this = this
     wx.request({
-      url: 'https://shenbo.artup.com//webService/getEntitysByLM?pageNo=1&pageSize=10&lang=0&LM=L0202', //仅为示例，并非真实的接口地址
+      url: _this.data.HOST + '/webService/getEntitysByLM?pageNo=1&pageSize=10&lang=0&LM=' + types,
       data: {
-        clientType:3
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
+        clientType: 3
       },
       success: function (res) {
-        if(res.data.masg == '成功'){
+        if (res.data.masg == '成功') {
+          wx.hideLoading()
           _this.setData({
             dataList: res.data.entitys
           })
+          console.log(res.data.entitys)
         }
-        console.log(res.data)
       }
     })
   },
-  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

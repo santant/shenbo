@@ -1,10 +1,10 @@
 <view class='box'>
     <view class='header'>
-        <view class='tab'>常设展览</view>
-        <view class='tab'>专题展览</view>
+        <view class="{{selectOne==true ? 'tab active':'tab'}}"  bindtap='checkUpdata'  data-types='L0202'>常设展览</view>
+        <view class="{{selectTwo==true ? 'tab active':'tab'}}"  bindtap='checkUpdata'  data-types='L0203'>专题展览</view>
     </view>
   <block  wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="itmes">
-   <view class='content' bindtap="toast">
+   <view class='content' bindtap="toast" data-res-id='{{itmes.resId}}'>
          <view class='leftBox'>
             <text class='tittle'>{{itmes.showName}}</text>
             <text class='qt'>{{itmes.entity.exhibitLocate}}</text>
@@ -12,7 +12,7 @@
          </view>
          <view class='rightBox'>
           <view class='imgBox'>
-              <image mode='widthFix' src='{{HOST}}{{itmes.showPic}}'></image>
+              <image  mode='widthFix' src='{{HOST}}{{itmes.showPic}}'></image>
           </view>
          </view>
     </view>

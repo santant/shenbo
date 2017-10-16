@@ -5,13 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    HOST: getApp().globalData.Host,
+    dataList:[],
+    selsetBool:false,
+    selectTrueText:'',
+    selectFalseText:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var resId = options.resId
+    var _this = this
+    wx.request({
+      url: _this.data.HOST + '/webAppExhibition/getExhibitionDetail?lang=0&platform=2',
+      data: {
+        clientType: 3,
+        resId: resId
+      },
+      success: function (res) {
+        if (res.data.masg == '成功') {
+          wx.hideLoading()
+          var falseText = res.data.entity.exhibitIntroduce.substr(0, 50).concat('....')
+          _this.setData({
+            dataList: res.data.entity,
+            selectFalseText: falseText,
+            selectTrueText: res.data.entity.exhibitIntroduce
+          })
+          console.log(res)
+        }
+      }
+    })
   
   },
   tapGoList: function (event) {
@@ -19,6 +44,21 @@ Page({
       url: '../exhibitionCollectionList/exhibitionCollectionList'
     })
     },
+  selectMore(){
+    var _this = this
+    if (_this.data.selsetBool){
+      console.log(1)
+      _this.setData({
+        selsetBool: false
+      })
+    }else{
+      console.log(2)
+      _this.setData({
+        selsetBool: true
+      })
+    }
+   
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
