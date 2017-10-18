@@ -1,16 +1,22 @@
+<import src="../wxParse/wxParse.wxml"/>
 <view class='contents'>
-  <view bindtap='tapGoList' class='list'> 
-    <view class='imgViewList'>
-      <image  mode='aspectFit' src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+  <block wx:for="{{activityList}}">
+    <view id='{{item.entity.id}}' bindtap='tapGoList' class='list wxParse'> 
+      <view class='imgViewList'>
+        <image  mode='aspectFit' src='{{HOST}}{{item.showPic}}'></image>
+      </view>
+      <view class='textList'>
+        <text>{{item.entity.showName}}</text>
+         
+         <!-- <template is="wxParse" data="{{wxParseData:item.entity.activeDetails}}" />  --> 
+        <!-- <text>{{item.entity.activeDetails}}</text> -->
+        <text class='special'>活动时间：{{item.entity.startDate}}-{{item.entity.endDate}}</text>
+        <text class='special'>活动地点：{{item.entity.place}}</text>
+      </view>
     </view>
-    <view class='textList'>
-      <text>【文化和自然遗产日】</text>
-      <text>深圳市2017年“文化和自然遗产日”系列活动 将在深圳博物馆举行</text>
-      <text class='special'>活动时间：2017年7月11日09:00- 16日11:00</text>
-      <text class='special'>活动地点：深圳博物馆（新馆）</text>
-    </view>
-  </view>
-  <view class='list'> 
+  </block>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  <!-- <view class='list'> 
     <view class='imgViewList'>
       <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
     </view>
@@ -20,5 +26,5 @@
       <text class='special'>活动时间：2017年7月11日09:00- 16日11:00</text>
       <text class='special'>活动地点：深圳博物馆（新馆）</text>
     </view>
-  </view>
+  </view> -->
 </view>

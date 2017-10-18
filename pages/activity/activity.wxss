@@ -1,3 +1,4 @@
+@import "/wxParse/wxParse.wxss";
 .contents{
   background: #f3f3f3;
   overflow: hidden;

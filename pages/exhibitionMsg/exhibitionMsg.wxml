@@ -18,7 +18,7 @@
     <image class='moresBtn' bindtap="tapGoList" src='../../image/more_03.png'></image>
   </view>
   <view class='imgListBox'>
-    <view  class='smallBox' wx:for="{{dataList.collList}}" wx:for-index="idx" wx:for-item="itmes" wx:if="{{idx < 3}}">
+    <view bindtap='tapGoListMsg' data-id='{{itmes.resId}}' id='{{itmes.resId}}' class='smallBox' wx:for="{{dataList.collList}}" wx:for-index="idx" wx:for-item="itmes" wx:if="{{idx < 3}}">
       <image src='{{HOST}}{{itmes.showPic}}'></image>
       <text>{{itmes.showName}}</text>
     </view>

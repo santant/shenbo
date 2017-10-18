@@ -93,6 +93,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    wx.showLoading({
+      title: '数据加载中...',
+      mask: true
+    })
     // 使用 wx.createAudioContext 获取 audio 上下文 context
     this.audioCtx = wx.createAudioContext('myAudio')
 
@@ -111,6 +115,7 @@ Page({
         wx.setNavigationBarTitle({
           title: res.data.entity.showName
         })
+        wx.hideLoading()
       }
     })
   },

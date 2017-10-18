@@ -19,6 +19,10 @@ Page({
   onLoad: function (options) {
     var vm = this;
     //头部接口
+    wx.showLoading({
+      title: '数据加载中...',
+      mask: true
+    })
     wx.request({
       url: this.data.HOST + 'CmsActiveService/getFenleiBycode?code=C0101&clientType=3&platform=3',
       success: function (res) {
@@ -27,6 +31,7 @@ Page({
         vm.setData({
           collection: res.data.entitys[0]
         })
+        wx.hideLoading()
       }
     })
   },

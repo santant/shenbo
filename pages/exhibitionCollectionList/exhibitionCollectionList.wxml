@@ -1,13 +1,13 @@
 <!--pages/collectionLis t/collectionList.wxml-->
 
  <view class='collectionList_img'>
-    <view  bindtap="tapGoList" class='imgList'>
+    <view data-id='{{item.resId}}'  id='{{item.resId}}' wx:for="{{dataList.collList}}" bindtap="tapGoListMsg" class='imgList'>
        <view class='imgBox'>
-      <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
+      <image src='{{HOST}}{{item.showPic}}'></image>
     </view>
-    <text>九九乘法口诀 刻文九九乘法口诀 </text>
+    <text>{{item.showName}} </text>
   </view>
-   <view class='imgList'>
+   <!-- <view class='imgList'>
        <view class='imgBox'>
       <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
     </view>
@@ -24,5 +24,5 @@
       <image src='http://image2.artup.com/static/xiaochengxu/test.jpg'></image>
     </view>
     <text>九九乘法口诀口诀 </text>
-  </view>
+  </view> -->
  </view>

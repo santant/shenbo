@@ -1,6 +1,11 @@
 // pages/exhibitionMsg/exhibitionMsg.js
 Page({
-
+  //事件处理函数
+  tapGoListMsg: function (event) {
+    wx.navigateTo({
+      url: '../collectionMsg/collectionMsg?id=' + event.currentTarget.id
+    })
+  },
   /**
    * 页面的初始数据
    */
@@ -9,13 +14,19 @@ Page({
     dataList:[],
     selsetBool:false,
     selectTrueText:'',
-    selectFalseText:''
+    selectFalseText:'',
+    resId:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: '数据加载中...',
+      mask: true
+    })
+    this.data.resId = options.resId;
     var resId = options.resId
     var _this = this
     wx.request({
@@ -33,7 +44,6 @@ Page({
             selectFalseText: falseText,
             selectTrueText: res.data.entity.exhibitIntroduce
           })
-          console.log(res)
         }
       }
     })
@@ -41,7 +51,7 @@ Page({
   },
   tapGoList: function (event) {
     wx.navigateTo({
-      url: '../exhibitionCollectionList/exhibitionCollectionList'
+      url: '../exhibitionCollectionList/exhibitionCollectionList?id=' + this.data.resId
     })
     },
   selectMore(){

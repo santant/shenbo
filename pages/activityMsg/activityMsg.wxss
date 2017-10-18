@@ -1,4 +1,5 @@
 /* pages/activityMsg/activityMsg.wxss */
+@import "/wxParse/wxParse.wxss";
 .img_top{
   margin: 40rpx 28rpx 14rpx;
 }
